@@ -18,7 +18,7 @@ let propertyController: PropertyController;
 
 beforeAll(async () => {
   dataSource = new DataSource({
-    type: "better-sqlite3",
+    type: "sqlite",
     database: ":memory:",
     dropSchema: true,
     entities: [PropertyEntity, UserEntity, BookingEntity],
